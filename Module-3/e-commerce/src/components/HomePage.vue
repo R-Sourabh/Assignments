@@ -68,7 +68,7 @@ export default {
   methods: {
     navigate(product) {
       this.$router.push({
-        name: "product-details",
+        name: "ProductDetails",
         params: { id: this.products.indexOf(product) },
         props: { product },
       });

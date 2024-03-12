@@ -1,25 +1,25 @@
 // router/index.js
-import { createRouter, createWebHistory } from 'vue-router';
-import HomePage from '@/components/HomePage.vue';
-import ProductDetails from '@/components/ProductDetails.vue';
-import Cart from '@/components/ShoppingCart.vue';
+import { createRouter, createWebHistory } from "vue-router";
+import HomePage from "@/components/HomePage.vue";
+import ProductDetails from "@/components/ProductDetails.vue";
+import Cart from "@/components/ShoppingCart.vue";
 
 const routes = [
   {
-    path: '/',
-    component: HomePage
+    path: "/",
+    component: HomePage,
   },
   {
-    path: '/products/:id',
-    name: 'product-details',
+    path: "/products/:id",
+    name: "ProductDetails",
     component: ProductDetails,
     props: true,
   },
   {
-    path: '/cart',
-    name: 'cart',
+    path: "/cart",
+    name: "cart",
     component: Cart,
-    props: true
+    props: true,
   },
 ];
 
